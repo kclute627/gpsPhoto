@@ -1,12 +1,31 @@
+
+
 {
-  "name": "SandyExpo",
-  "displayName": "SandyExpo",
+  "name": "Photo GPS",
+  "displayName": "GPS Photo",
   "expo": {
-    "name": "SandyExpo",
-    "slug": "SandyExpo",
+    "name": "GPS Photo",
+    "slug": "GPSPhoto",
+    
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "icon": "./Assets/icon.png",
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./Assets/default.png",
+      "backgroundColor": "#FFF",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "bundleIdentifier": "com.gpsPhotoapp",
+      "buildNumber": "1.0.0"
+    },
+  
+    "android":{
+      "adaptiveIcon": {
+        "foregroundImage": "./Assets/adaptive-icon.png"
+        
+      
+      }
+    }
   }
 }
