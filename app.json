@@ -1,15 +1,14 @@
-
-
 {
   "name": "Photo GPS",
   "displayName": "GPS Photo",
   "expo": {
     "name": "GPS Photo",
     "slug": "GPSPhoto",
-    
     "version": "1.0.0",
     "icon": "./Assets/icon.png",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "splash": {
       "image": "./Assets/default.png",
       "backgroundColor": "#FFF",
@@ -19,13 +18,11 @@
       "bundleIdentifier": "com.gpsPhotoapp",
       "buildNumber": "1.0.0"
     },
-  
-    "android":{
+    "android": {
       "adaptiveIcon": {
         "foregroundImage": "./Assets/adaptive-icon.png"
-        
-      
-      }
+      },
+      "package": "com.gpsPhotoapp"
     }
   }
 }
