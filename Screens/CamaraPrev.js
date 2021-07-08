@@ -40,12 +40,12 @@ const CamaraPrev = ({ route, navigation }) => {
       result: "tmpfile",
       height: 1980,
       width: 1180,
-      quality: .7,
-      format: 'jpg'
+      quality: 0.7,
+      format: "jpg",
     }).then(
       (uri) => {
         console.log(uri, "uri");
-        
+
         MediaLibrary.createAssetAsync(uri);
         Alert.alert("Photo Saved");
         navigation.navigate("Camara", { alert: "Photo Saved" });
@@ -54,13 +54,12 @@ const CamaraPrev = ({ route, navigation }) => {
     );
   };
   return (
-    <View
-      style={
-        orentation !== 1 ? [styles.row] : styles.container
-      }
-    >
+    <View style={orentation !== 1 ? [styles.row] : styles.container}>
       <View style={styles.camera} ref={viewShot}>
-        <Image source={{ uri: picture }} style={{ flex: 1 }} />
+        <Image
+          source={{ uri: picture }}
+          style={{ flex: 1, width: 66, height: 58 }}
+        />
         <Gps orentation={orentation} coords={location} />
       </View>
 
